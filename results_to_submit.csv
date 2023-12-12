@@ -1,0 +1,4 @@
+,Model,Dataset,RMSE,Training Time
+0,LGBMRegressor,dataset_1,51.08017209623861,0.897397518157959
+1,XGBRegressor,dataset_1,50.70220966759599,0.9785994052886963
+2,AdaBoostRegressor,dataset_1,[],[]
