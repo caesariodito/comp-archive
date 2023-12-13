@@ -1,0 +1,6 @@
+Model,Dataset,Transformation,RMSE,Training Time
+XGBRegressor1,dataset_1,standard_scale_dataframe,19.19712273277809,4.630407285690308
+StackingRegressor5,dataset_1,standard_scale_dataframe,19.208027588026493,310.78459348678587
+BaggingRegressor3,dataset_1,standard_scale_dataframe,19.244597296458725,42.80893359184265
+LGBMRegressor2,dataset_1,standard_scale_dataframe,20.287509943200565,1.2659554481506348
+BaggingRegressor4,dataset_1,standard_scale_dataframe,20.345758171972076,12.169635581970216
