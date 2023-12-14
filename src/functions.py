@@ -4,7 +4,12 @@ import prince
 from sklearn.preprocessing import OneHotEncoder
 from category_encoders import BinaryEncoder, OrdinalEncoder
 from sklearn.decomposition import PCA
-from sklearn.preprocessing import PowerTransformer, MinMaxScaler, StandardScaler
+from sklearn.preprocessing import (
+    PowerTransformer,
+    MinMaxScaler,
+    StandardScaler,
+    RobustScaler,
+)
 
 
 def process_transmission(df):
@@ -250,6 +255,24 @@ def minmax_transform_dataframe(df_train, df_test, columns_to_transform):
 
 def standard_scale_dataframe(df_train, df_test, columns_to_transform):
     scaler = StandardScaler()
+
+    transformed_data_train = scaler.fit_transform(df_train[columns_to_transform])
+    transformed_df_train = pd.DataFrame(
+        transformed_data_train, columns=columns_to_transform, index=df_train.index
+    )
+    df_train[columns_to_transform] = transformed_df_train
+
+    transformed_data_test = scaler.transform(df_test[columns_to_transform])
+    transformed_df_test = pd.DataFrame(
+        transformed_data_test, columns=columns_to_transform, index=df_test.index
+    )
+    df_test[columns_to_transform] = transformed_df_test
+
+    return df_train, df_test
+
+
+def robust_transform_dataframe(df_train, df_test, columns_to_transform):
+    scaler = RobustScaler()
 
     transformed_data_train = scaler.fit_transform(df_train[columns_to_transform])
     transformed_df_train = pd.DataFrame(

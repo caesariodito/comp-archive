@@ -1,0 +1,9 @@
+Model,Dataset,Transformation,RMSE,Training Time
+XGBRegressor1,dataset_2,standard_scale_dataframe,19.392969983812563,0.5062482833862305
+XGBRegressor1,dataset_2,robust_transform,19.392969983812563,0.46242337226867675
+XGBRegressor1,dataset_1,standard_scale_dataframe,19.812993154935914,0.49512877464294436
+XGBRegressor1,dataset_1,robust_transform,19.812993154935914,0.4511079788208008
+LGBMRegressor2,dataset_2,standard_scale_dataframe,19.867289917086374,0.30556693077087405
+LGBMRegressor2,dataset_2,robust_transform,19.886620017787514,0.326933479309082
+LGBMRegressor2,dataset_1,robust_transform,20.29762035347695,0.3044307231903076
+LGBMRegressor2,dataset_1,standard_scale_dataframe,20.315442787074343,0.33778181076049807
