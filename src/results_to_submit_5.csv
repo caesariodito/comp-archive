@@ -1,0 +1,10 @@
+Model,Dataset,Transformation,RMSE,Training Time
+XGBRegressor3,dataset_1,standard_scale_dataframe,19.09160322303326,78.26539578437806
+XGBRegressor3,dataset_2,standard_scale_dataframe,19.119249299798167,114.03080539703369
+XGBRegressor1,dataset_2,standard_scale_dataframe,19.326905434006544,0.4472724437713623
+XGBRegressor1,dataset_1,standard_scale_dataframe,19.392969983812563,0.3597896099090576
+XGBRegressor3,dataset_3,standard_scale_dataframe,20.386049345345477,109.99416561126709
+XGBRegressor1,dataset_3,standard_scale_dataframe,20.447055551100664,0.4759268283843994
+XGBRFRegressor2,dataset_2,standard_scale_dataframe,25.658055794796724,0.7634421825408936
+XGBRFRegressor2,dataset_1,standard_scale_dataframe,25.665563915047557,0.5321057796478271
+XGBRFRegressor2,dataset_3,standard_scale_dataframe,26.67242091964393,0.7532992362976074
