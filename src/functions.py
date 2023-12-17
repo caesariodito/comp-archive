@@ -23,10 +23,10 @@ def process_transmission(df):
     }
 
     # Extract the transmission type using a regular expression
-    df["Transmission Type"] = df["Transmission"].str.extract(r"(\D+)")
+    df["Transmission_Type"] = df["Transmission"].str.extract(r"(\D+)")
 
     # Apply the mapping to the 'Transmission_Type' column
-    df["Transmission Type"] = df["Transmission Type"].map(transmission_mapping)
+    df["Transmission_Type"] = df["Transmission_Type"].map(transmission_mapping)
     # df["Transmission Type General"] = df["Transmission Type"].map(transmission_mapping)
 
     # Extract the number of gears
